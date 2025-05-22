@@ -1,31 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Birthday</title>
+    <title>Doğum Günün Kutlu Olsun</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="birtdayCard">
-    <div class="cardFront">
-        <h3 class="happy">Happy New Years</h3>
-        <div class="balloons">
-            <div class="balloon-1"></div>
-            <div class="balloon-2"></div>
-            <div class="balloon-3"></div>
-            <div class="balloon-4"></div>
+    <audio id="fireworkSound" src="firework.mp3" preload="auto"></audio>
+
+    
+   <div class="background-decor">
+  <div class="firework delay1"></div>
+  <div class="firework delay2"></div>
+  <div class="firework delay3"></div>
+</div>
+
+
+    <div class="birthdayCard" onmouseenter="playFireworks()">
+        <div class="cardFront">
+            <h3 class="happy">  Mutlu Yıllar</h3>
+            <div class="balloons">
+                <div class="balloon-1"></div>
+                <div class="balloon-2"></div>
+                <div class="balloon-3"></div>
+                <div class="balloon-4"></div>
+            </div>
+        </div>
+        <div class="cardInside">
+            <h3 class="back">Mutlu Yıllar</h3>
+            <p>    Bugün senin günün!</p>
+            <p>    Nice sağlıklı, mutlu ve başarı dolu yaşlara. Her şey gönlünce olsun!</p>
+            <p class="name">🎉</p>
         </div>
     </div>
-    <div class="cardInside">
-        <h3 class="back">Lorem Ipsum</h3>
-        <p>Sevgili Elanur</p>
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Quidem nesciunt doloribus et vero possimus fugiat dolore,
-            corporis mollitia ducimus autem blanditiis, tenetur excepturi, veritatis eius deserunt. Exercitationem sunt quis ut!  </p>
-        <p class="name"></p>
-    </div>
-    </div>
-    
+
+    <script src="script.js"></script>
 </body>
 </html>
