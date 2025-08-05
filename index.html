@@ -1,40 +1,50 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doğum Günün Kutlu Olsun</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Doğum Günün Kutlu Olsun</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <audio id="fireworkSound" src="firework.mp3" preload="auto"></audio>
 
-    
-   <div class="background-decor">
-  <div class="firework delay1"></div>
-  <div class="firework delay2"></div>
-  <div class="firework delay3"></div>
-</div>
+ 
 
+  <!-- Konfeti Efekti -->
+  <script>
+    const colors = ['#ff3c38', '#ffb703', '#8ac926', '#1982c4', '#6a4c93'];
+    for (let i = 0; i < 60; i++) {
+      const confetti = document.createElement('div');
+      confetti.classList.add('confetti');
+      confetti.style.left = Math.random() * 100 + 'vw';
+      confetti.style.top = -Math.random() * 100 + 'px';
+      confetti.style.animationDelay = Math.random() * 4 + 's';
+      confetti.style.backgroundColor = colors[i % colors.length];
+      document.body.appendChild(confetti);
+    }
+  </script>
 
-    <div class="birthdayCard" onmouseenter="playFireworks()">
-        <div class="cardFront">
-            <h3 class="happy">  Mutlu Yıllar</h3>
-            <div class="balloons">
-                <div class="balloon-1"></div>
-                <div class="balloon-2"></div>
-                <div class="balloon-3"></div>
-                <div class="balloon-4"></div>
-            </div>
-        </div>
-        <div class="cardInside">
-            <h3 class="back">Mutlu Yıllar</h3>
-            <p>    Bugün senin günün!</p>
-            <p>    Nice sağlıklı, mutlu ve başarı dolu yaşlara. Her şey gönlünce olsun!</p>
-            <p class="name">🎉</p>
-        </div>
+  <!-- Doğum Günü Kartı -->
+  <div class="birthdayCard">
+    <div class="cardFront">
+      <h3 class="happy">Mutlu Yıllar</h3>
+      <div class="balloons">
+        <div class="balloon-1"></div>
+        <div class="balloon-2"></div>
+        <div class="balloon-3"></div>
+        <div class="balloon-4"></div>
+      </div>
     </div>
+    <div class="cardInside">
+      <h3 class="back">Mutlu Yıllar</h3>
+      <p>Bugün senin günün!</p>
+      <p>Nice sağlıklı, mutlu ve başarı dolu yaşlara. Her şey gönlünce olsun!</p>
+      <p class="name">🎉 Sevgilerle, Burak</p>
+    </div>
+  </div>
 
-    <script src="script.js"></script>
+ 
+  
 </body>
 </html>
