@@ -1,1 +1,1 @@
-Kişiye göre özelleştirebileceğiniz bir doğum günü kartı. Dosyaya istediğiniz ses dosyasını atarsanız kartın üzerine geldiğinizde o çalacaktır. Html kısmından istediğiniz yazıyı yazabilirsiniz
+Kişiye göre özelleştirebileceğiniz animasyonlu bir doğum günü kartı. İçeriğini ve renk temasını istediğiniz şekilde değiştirebilirsiniz. Sevdikleriniz için ufak tatlı bir hediye.
